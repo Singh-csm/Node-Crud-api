@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "fa9d34e1-6bdb-436d-9caf-8a88167e212f",
+		"name": "Node-crud-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24846038"
+	},
+	"item": [
+		{
+			"name": "Product-post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "productId",
+							"value": " 123456",
+							"type": "text"
+						},
+						{
+							"key": "productName",
+							"value": " Sample Product",
+							"type": "text"
+						},
+						{
+							"key": "productDescription",
+							"value": " This is a sample product description.:",
+							"type": "text"
+						},
+						{
+							"key": "productImages",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "isActive",
+							"value": " true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-products",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update-Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/products/123456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"products",
+						"123456"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete-Product",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
