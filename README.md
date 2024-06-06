@@ -4,7 +4,7 @@
 
 ## Architecture/Flow:
 
----
+```
 
 nodejs-crud-api/
 ├── controllers/
@@ -21,7 +21,8 @@ nodejs-crud-api/
 ├── app.js
 ├── package.json
 └── README.md
----
+
+```
 
 ## Features:
 
