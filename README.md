@@ -58,7 +58,8 @@ nodejs-crud-api/
 
 1. Insert Product
 
----
+```
+
 URL: /api/products
 Method: POST
 Headers: Content-Type: multipart/form-data
@@ -68,39 +69,51 @@ productName (String)
 productDescription (String)
 isActive (Boolean)
 productImages (File)
----
+
+```
 
 2. Get Product Information
----
+
+```
+
 URL: /api/products/:productId
 Method: GET
----
+
+```
 
 3. Get List of Active Products
----
+
+```
+
 URL: /api/products
 Method: GET
 Query Parameters:
 page (Number) - Page number for pagination (default: 1)
----
+
+```
 
 4. Update Product
----
+
+```
+
 URL: /api/products/:productId
 Method: PUT
 Headers: Content-Type: application/json
-Body:
 productName (String)
 productDescription (String)
 isActive (Boolean)
 productImages (Array of Strings) - File paths
----
+
+```
 
 5. Delete Product
----
+
+```
+
 URL: /api/products/:productId
 Method: DELETE
----
+
+```
 
 ## Postman Collection:
 
